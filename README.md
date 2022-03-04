@@ -4,13 +4,13 @@ Proyecto Final Aplicaciones Web Avanzadas EPN 2021-B
 
 Aplicación para compra-venta de casas y bienes raíces. 
 
-Autores: 
+### Autores: 
 
 • Anderson Cárdenas
 
 • Javier Erazo
 
-Creado con:
+### Creado con:
 
 • Angular
 
