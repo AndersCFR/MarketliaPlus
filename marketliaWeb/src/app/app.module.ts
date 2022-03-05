@@ -1,8 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { InicioModule } from './pages/inicio/inicio.module';
+import { LoginModule } from './pages/login/login.module';
+import { MisPublicacionesModule } from './pages/mis-publicaciones/mis-publicaciones.module';
+import { NuevaPublicacionModule } from './pages/nueva-publicacion/nueva-publicacion.module';
+import { SharedModule } from './shared/shared.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -10,7 +17,14 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    InicioModule,
+    LoginModule,
+    MisPublicacionesModule,
+    NuevaPublicacionModule,
+    SharedModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

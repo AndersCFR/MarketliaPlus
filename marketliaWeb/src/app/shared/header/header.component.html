@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="../../assets/img/Logo_Marketlia.jpg" alt="logo marketlia">
+          </a>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" *ngFor="let item of navbar">
+                <a class="nav-link active" aria-current="page" [routerLink]="[item.ruta]">{{item.label}}</a>
+              </li>
+            </ul>
+            <ul class="d-flex list-unstyled m-auto w-100 justify-content-end align-items-center">
+              <li class="mx-2">
+                <button class="btn"><strong>Publicar</strong></button>
+              </li>
+              <li class="">
+                <button class="btn btn-orange ">Ingresar</button>
+
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+
+  </div>
+</div>
+

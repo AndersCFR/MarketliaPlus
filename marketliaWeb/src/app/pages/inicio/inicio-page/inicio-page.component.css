@@ -1,0 +1,13 @@
+div.hero {
+  background-image: url(../../../../assets/img/fondo_hero.jpg);
+  height: 100vh;
+  min-height: 500px;
+
+}
+
+.container-home{
+  
+  background-color:rgba(255,255,255,0.3) ;
+  border-radius: 8px
+
+}
