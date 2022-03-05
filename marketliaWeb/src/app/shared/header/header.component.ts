@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ModalDialogComponent } from 'src/app/pages/login/modal-dialog/modal-dialog.component';
 export interface Menu{
   label: string,
   ruta: string
@@ -35,9 +37,22 @@ export class HeaderComponent implements OnInit {
       ruta: '/'
     }
   ];
-  constructor() { }
+  constructor(
+    public dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
   }
 
+  openDialog(): void {
+    const dialogRef = this.dialog.open(ModalDialogComponent, {
+      width: '250px',
+      data: {},
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      // this.animal = result;
+    });
+  }
 }
