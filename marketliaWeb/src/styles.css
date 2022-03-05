@@ -5,7 +5,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 
-button.btn-orange{
+button.btn-orange,
+a.btn-orange{
   background-color: #FF5500!important;
   color: white;
 }

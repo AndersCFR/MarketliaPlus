@@ -4,5 +4,11 @@
       <app-buscador class="row container-home p-5"></app-buscador>
   </div>
 </div>
-
+<div class="container my-4 d-flex justify-content-evenly">
+  <div class="col-md-3" *ngFor="let anuncio of infoAnuncios">
+    <app-info-anuncio
+    [infoAnuncio]="anuncio"
+    ></app-info-anuncio>
+  </div>
+</div>
 <app-footer></app-footer>
