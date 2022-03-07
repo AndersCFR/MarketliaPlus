@@ -9,6 +9,10 @@ const routes: Routes = [
     path:'inicio',
     component: InicioPageComponent
   },
+  // {
+  //   path: 'publicar',
+  //   component:
+  // }
   {
     path: '**',
     pathMatch: 'full',
