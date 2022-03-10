@@ -1,0 +1,16 @@
+<app-header></app-header>
+
+<div class="container">
+  <app-filtros-busqueda></app-filtros-busqueda>
+  <div class="row mt-3">
+    <h2 class="font-weight-bold">1.234 lugares en alquiler en Ecuador</h2>
+  </div>
+  <div class="row my-3" *ngFor="let publicacion of publicaciones">
+    <app-publicacion
+      class="border rounded px-0 d-flex"
+      [publicacion]="publicacion">
+    </app-publicacion>
+  </div>
+</div>
+
+<app-footer></app-footer>

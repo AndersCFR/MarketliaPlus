@@ -10,6 +10,7 @@ import { MisPublicacionesModule } from './pages/mis-publicaciones/mis-publicacio
 import { NuevaPublicacionModule } from './pages/nueva-publicacion/nueva-publicacion.module';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BuscarPublicacionesModule } from './pages/buscar-publicaciones/buscar-publicaciones.module';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MisPublicacionesModule,
     NuevaPublicacionModule,
     SharedModule,
+    BuscarPublicacionesModule,
     BrowserAnimationsModule
   ],
   providers: [],
