@@ -1,0 +1,22 @@
+<app-header></app-header>
+
+<div class="container my-1">
+    <div class="row rounded bg-orange d-flex align-items-center">
+        <h2 class="text-white font-weight-bold pt-3">Productos Disponibles</h2>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-2 bg-light rounded">
+        <app-filtro-mis-publicaciones></app-filtro-mis-publicaciones>
+      </div>
+      <div class="col-md card" >
+        <!-- Publicaciones -->
+        <app-mi-publicacion
+        *ngFor="let publicacion of misPublicaciones"
+        [miPublicacion]="miPublicacion"></app-mi-publicacion>
+        <!-- Fin Publicaciones -->
+      </div>
+    </div>
+
+</div>
+<app-footer></app-footer>
+

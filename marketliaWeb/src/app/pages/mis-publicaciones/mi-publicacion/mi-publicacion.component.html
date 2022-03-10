@@ -1,0 +1,32 @@
+<div class="card text-center my-2">
+  <div class="card-header">
+    {{miPublicacion.titulo}}
+  </div>
+  <div class="row">
+    <div class="col">
+      <img [src]="[miPublicacion.foto]" alt="" class="img img-fluid">
+    </div>
+    <div class="col">
+      <h5 class="card-title"><strong>Descripción</strong> {{miPublicacion.descripcion}}</h5>
+    </div>
+    <div class="col">
+
+      <p class="card-text"><strong>Precio:</strong> {{miPublicacion.precio | currency}}</p>
+      <p class="card-text"><strong>Baños:</strong> {{miPublicacion.numeroBanos}}</p>
+      <p class="card-text"><strong>Construcción:</strong> {{miPublicacion.construccion}} m</p>
+      <p class="card-text"><strong>Abierto:</strong> {{miPublicacion.abierta}} m</p>
+      <p class="card-text"><strong>Habitaciones:</strong> {{miPublicacion.numeroHab}}</p>
+    </div>
+    <div class="col">
+      <p class="card-text"><strong>Antiguedad:</strong> {{miPublicacion.antiguedad}} años</p>
+      <p class="card-text"><strong>Tipo:</strong> {{miPublicacion.tipoPropiedad}}</p>
+      <p class="card-text"><strong>Dirección:</strong> {{miPublicacion.direccion}}</p>
+      <p class="card-text"><strong>Ciudad:</strong> {{miPublicacion.ciudad}} </p>
+      <a href="#" class="btn btn-orange m-1">Editar</a>
+      <a href="#" class="btn btn-danger m-1">Borrar</a>
+    </div>
+  </div>
+  <div class="card-footer text-muted">
+    2 days ago
+  </div>
+</div>

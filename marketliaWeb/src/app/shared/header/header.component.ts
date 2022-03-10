@@ -14,6 +14,10 @@ export interface Menu{
 export class HeaderComponent implements OnInit {
   navbar: Menu[] = [
     {
+      label: 'MisPublicaciones',
+      ruta: '/mispublicaciones'
+    },
+    {
       label: 'Comprar',
       ruta: '/'
     },
@@ -31,10 +35,6 @@ export class HeaderComponent implements OnInit {
     },
     {
       label: 'Facilita',
-      ruta: '/'
-    },
-    {
-      label: 'Data',
       ruta: '/'
     }
   ];
