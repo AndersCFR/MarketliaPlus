@@ -30,4 +30,9 @@ export class MiPublicacionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  borrarMiPublicacion(id: number){
+    console.log('El id a borrar es', id)
+    //TODO Eventemitter para actualizar la lista
+  }
+
 }

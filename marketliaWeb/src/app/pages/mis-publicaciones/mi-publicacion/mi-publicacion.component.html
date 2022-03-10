@@ -22,11 +22,119 @@
       <p class="card-text"><strong>Tipo:</strong> {{miPublicacion.tipoPropiedad}}</p>
       <p class="card-text"><strong>Dirección:</strong> {{miPublicacion.direccion}}</p>
       <p class="card-text"><strong>Ciudad:</strong> {{miPublicacion.ciudad}} </p>
-      <a href="#" class="btn btn-orange m-1">Editar</a>
-      <a href="#" class="btn btn-danger m-1">Borrar</a>
+
+      <button
+      class="btn btn-orange m-1"
+      type="button"
+      data-bs-toggle="modal"
+      data-bs-target="#modalEdit">Editar</button>
+      <button (click)="borrarMiPublicacion(miPublicacion.id)" class="btn btn-danger m-1">Borrar</button>
     </div>
   </div>
   <div class="card-footer text-muted">
     2 days ago
+  </div>
+</div>
+
+
+<!-- Modal Dialog Editar publicacion -->
+<div class="modal fade" id="modalEdit" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editModalLabel">Editando la publicacion {{miPublicacion.id}}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="titulo" class="form-label">Título</label>
+            <input type="text" class="form-control" id="titulo" aria-describedby="titulo" placeholder="Título de tu publicación..." value="{{miPublicacion.titulo}}">
+
+          </div>
+          <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripción</label>
+            <textarea  class="form-control" id="descripcion" placeholder="Escribe los detalles del lugar que quieres publicar..." value="{{miPublicacion.descripcion}}"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="precio" class="form-label">Precio</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text">$</span>
+              <input type="number" class="form-control" id="precio" aria-describedby="precio" placeholder="Precio de tu propiedad..." value="{{miPublicacion.precio}}">
+              <span class="input-group-text">.00</span>
+            </div>
+          </div>
+          <!-- Numero de pisos -->
+          <div class="mb-3">
+            <label for="pisos" class="form-label">Número de pisos</label>
+            <input type="number" class="form-control" id="pisos" aria-describedby="pisos" placeholder="0" value="{{miPublicacion.pisos}}">
+          </div>
+          <!-- Numero de banos -->
+          <div class="mb-3">
+            <label for="banos" class="form-label">Número de baños</label>
+            <input type="number" class="form-control" id="banos" aria-describedby="banos" placeholder="0" value="{{miPublicacion.numeroBanos}}">
+          </div>
+          <!-- Superficie de construccion -->
+          <div class="mb-3">
+            <label for="construccion" class="form-label">Superficie de construcción</label>
+            <div class="input-group mb-3">
+              <input type="number" class="form-control" id="construccion" aria-describedby="construccion" placeholder="0" value="{{miPublicacion.construccion}}">
+              <span class="input-group-text">metros</span>
+            </div>
+          </div>
+          <!-- Superficie abierta -->
+          <div class="mb-3">
+            <label for="abierta" class="form-label">Superficie abierta</label>
+            <div class="input-group mb-3">
+              <input type="number" class="form-control" id="abierta" aria-describedby="abierta" placeholder="0" value="{{miPublicacion.abierta}}">
+              <span class="input-group-text">metros</span>
+            </div>
+          </div>
+          <!-- Numero habitaciones -->
+          <div class="mb-3">
+            <label for="habitaciones" class="form-label">Número de habitaciones</label>
+            <input type="number" class="form-control" id="habitaciones" aria-describedby="habitaciones" placeholder="0" value="{{miPublicacion.numeroHab}}">
+          </div>
+
+          <!-- Antiguedad anos -->
+          <div class="mb-3">
+            <label for="antiguedad" class="form-label">Años de antiguedad</label>
+            <input type="number" class="form-control" id="antiguedad" aria-describedby="antiguedad" placeholder="0" value="{{miPublicacion.antiguedad}}">
+          </div>
+
+          <!-- Tipo de propiedad CASA DEPARTAMENTO edificio o terreno -->
+          <div class="mb-3">
+            <label class="form-label">Tipo de propiedad</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>{{miPublicacion.tipoPropiedad}}</option>
+              <option value="0">Casa</option>
+              <option value="1">Departamento</option>
+              <option value="2">Edificio</option>
+              <option value="3">Edificio</option>
+            </select>
+          </div>
+          <!-- Direccion -->
+          <div class="mb-3">
+            <label for="direccion" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="direccion" aria-describedby="direccion" placeholder="Escriba la dirección exacta del lugar..." value="{{miPublicacion.direccion}}">
+          </div>
+          <!-- Ciudad -->
+          <div class="mb-3">
+            <label for="ciudad" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="ciudad" aria-describedby="ciudad" placeholder="Escriba la ciudad del lugar..." value="{{miPublicacion.ciudad}}">
+          </div>
+          <!-- Subir una sola foto -->
+          <div class="mb-3">
+            <label for="foto" class="form-label">Foto</label>
+           <input id="foto" type="file" accept="image/*" class="form-control" >
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-orange">Guardar</button>
+      </div>
+    </div>
   </div>
 </div>
