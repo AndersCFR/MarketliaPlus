@@ -1,14 +1,14 @@
 export interface MiPublicacion{
-  id: number;
+  id: string;
   titulo: string;
   descripcion: string;
   precio: number;
-  pisos: number;
+  numeroPisos: number;
   numeroBanos: number;
-  construccion: number;
-  abierta: number;
-  numeroHab: number;
-  antiguedad: number;
+  superficieConstruccion: number;
+  superficieAbierta: number;
+  numeroHabitaciones: number;
+  antiguedadAnos: number;
   tipoPropiedad: string;
   direccion: string;
   ciudad: string;

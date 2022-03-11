@@ -9,16 +9,16 @@ import { MiPublicacion } from 'src/app/interfaces/mipublicacion.interface';
 export class PublicacionComponent implements OnInit {
   @Input()
   publicacion: MiPublicacion = {
-    id: 4040,
+    id: '4040',
     titulo: 'lorem',
     descripcion: 'lorem',
     precio: -1,
-    pisos: -1,
+    numeroPisos: -1,
     numeroBanos: -1,
-    construccion: -1,
-    abierta: -1,
-    numeroHab: -1,
-    antiguedad: -1,
+    superficieConstruccion: -1,
+    superficieAbierta: -1,
+    numeroHabitaciones: -1,
+    antiguedadAnos: -1,
     tipoPropiedad: 'lorem',
     direccion: 'lorem',
     ciudad: 'lorem',

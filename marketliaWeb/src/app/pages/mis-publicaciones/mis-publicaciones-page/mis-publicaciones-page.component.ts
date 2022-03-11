@@ -8,16 +8,16 @@ import { MiPublicacion } from 'src/app/interfaces/mipublicacion.interface';
 })
 export class MisPublicacionesPageComponent implements OnInit {
   miPublicacion: MiPublicacion = {
-    id: 6969,
+    id: '6969',
     titulo: 'Departamento de 4 pisos',
     descripcion: 'Excelente estado con hermosa vista al mirador de cumbaya, no tiene ningun detalles',
     precio: 234000,
-    pisos: 1,
+    numeroPisos: 1,
     numeroBanos: 3,
-    construccion: 250,
-    abierta: 50,
-    numeroHab: 5,
-    antiguedad: 4,
+    superficieConstruccion: 250,
+    superficieAbierta: 50,
+    numeroHabitaciones: 5,
+    antiguedadAnos: 4,
     tipoPropiedad: 'Departamento',
     direccion: 'Cumbaya, cerca al paseo',
     ciudad: 'Quito',

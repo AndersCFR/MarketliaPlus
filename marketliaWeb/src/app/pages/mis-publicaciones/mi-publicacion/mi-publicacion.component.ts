@@ -10,16 +10,16 @@ export class MiPublicacionComponent implements OnInit {
 
   @Input()
   miPublicacion: MiPublicacion = {
-    id: 4040,
+    id: '4040',
     titulo: 'lorem',
     descripcion: 'lorem',
     precio: -1,
-    pisos: -1,
+    numeroPisos: -1,
     numeroBanos: -1,
-    construccion: -1,
-    abierta: -1,
-    numeroHab: -1,
-    antiguedad: -1,
+    superficieConstruccion: -1,
+    superficieAbierta: -1,
+    numeroHabitaciones: -1,
+    antiguedadAnos: -1,
     tipoPropiedad: 'lorem',
     direccion: 'lorem',
     ciudad: 'lorem',
@@ -30,7 +30,7 @@ export class MiPublicacionComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  borrarMiPublicacion(id: number){
+  borrarMiPublicacion(id: string){
     console.log('El id a borrar es', id)
     //TODO Eventemitter para actualizar la lista
   }

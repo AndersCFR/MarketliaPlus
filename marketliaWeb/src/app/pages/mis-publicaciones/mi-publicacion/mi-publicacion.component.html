@@ -13,12 +13,12 @@
 
       <p class="card-text"><strong>Precio:</strong> {{miPublicacion.precio | currency}}</p>
       <p class="card-text"><strong>Baños:</strong> {{miPublicacion.numeroBanos}}</p>
-      <p class="card-text"><strong>Construcción:</strong> {{miPublicacion.construccion}} m</p>
-      <p class="card-text"><strong>Abierto:</strong> {{miPublicacion.abierta}} m</p>
-      <p class="card-text"><strong>Habitaciones:</strong> {{miPublicacion.numeroHab}}</p>
+      <p class="card-text"><strong>Construcción:</strong> {{miPublicacion.superficieConstruccion}} m</p>
+      <p class="card-text"><strong>Abierto:</strong> {{miPublicacion.superficieAbierta}} m</p>
+      <p class="card-text"><strong>Habitaciones:</strong> {{miPublicacion.numeroHabitaciones}}</p>
     </div>
     <div class="col">
-      <p class="card-text"><strong>Antiguedad:</strong> {{miPublicacion.antiguedad}} años</p>
+      <p class="card-text"><strong>Antiguedad:</strong> {{miPublicacion.antiguedadAnos}} años</p>
       <p class="card-text"><strong>Tipo:</strong> {{miPublicacion.tipoPropiedad}}</p>
       <p class="card-text"><strong>Dirección:</strong> {{miPublicacion.direccion}}</p>
       <p class="card-text"><strong>Ciudad:</strong> {{miPublicacion.ciudad}} </p>
@@ -67,7 +67,7 @@
           <!-- Numero de pisos -->
           <div class="mb-3">
             <label for="pisos" class="form-label">Número de pisos</label>
-            <input type="number" class="form-control" id="pisos" aria-describedby="pisos" placeholder="0" value="{{miPublicacion.pisos}}">
+            <input type="number" class="form-control" id="pisos" aria-describedby="pisos" placeholder="0" value="{{miPublicacion.numeroPisos}}">
           </div>
           <!-- Numero de banos -->
           <div class="mb-3">
@@ -78,7 +78,7 @@
           <div class="mb-3">
             <label for="construccion" class="form-label">Superficie de construcción</label>
             <div class="input-group mb-3">
-              <input type="number" class="form-control" id="construccion" aria-describedby="construccion" placeholder="0" value="{{miPublicacion.construccion}}">
+              <input type="number" class="form-control" id="construccion" aria-describedby="construccion" placeholder="0" value="{{miPublicacion.superficieConstruccion}}">
               <span class="input-group-text">metros</span>
             </div>
           </div>
@@ -86,20 +86,20 @@
           <div class="mb-3">
             <label for="abierta" class="form-label">Superficie abierta</label>
             <div class="input-group mb-3">
-              <input type="number" class="form-control" id="abierta" aria-describedby="abierta" placeholder="0" value="{{miPublicacion.abierta}}">
+              <input type="number" class="form-control" id="abierta" aria-describedby="abierta" placeholder="0" value="{{miPublicacion.superficieAbierta}}">
               <span class="input-group-text">metros</span>
             </div>
           </div>
           <!-- Numero habitaciones -->
           <div class="mb-3">
             <label for="habitaciones" class="form-label">Número de habitaciones</label>
-            <input type="number" class="form-control" id="habitaciones" aria-describedby="habitaciones" placeholder="0" value="{{miPublicacion.numeroHab}}">
+            <input type="number" class="form-control" id="habitaciones" aria-describedby="habitaciones" placeholder="0" value="{{miPublicacion.numeroHabitaciones}}">
           </div>
 
           <!-- Antiguedad anos -->
           <div class="mb-3">
             <label for="antiguedad" class="form-label">Años de antiguedad</label>
-            <input type="number" class="form-control" id="antiguedad" aria-describedby="antiguedad" placeholder="0" value="{{miPublicacion.antiguedad}}">
+            <input type="number" class="form-control" id="antiguedad" aria-describedby="antiguedad" placeholder="0" value="{{miPublicacion.antiguedadAnos}}">
           </div>
 
           <!-- Tipo de propiedad CASA DEPARTAMENTO edificio o terreno -->

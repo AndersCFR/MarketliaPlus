@@ -27,7 +27,7 @@ const routes: Routes = [
   {
     path: '**',
     pathMatch: 'full',
-    redirectTo: 'buscarpubs'
+    redirectTo: 'inicio'
   }
 
 ];
