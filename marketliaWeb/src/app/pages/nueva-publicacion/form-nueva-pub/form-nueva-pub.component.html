@@ -1,0 +1,84 @@
+<form>
+  <div class="mb-3">
+    <label for="titulo" class="form-label">Título</label>
+    <input type="text" class="form-control" id="titulo" aria-describedby="titulo" placeholder="Título de tu publicación...">
+    <!-- <div id="titulo" class="form-text">Ingresa el título de tu publicación</div> -->
+  </div>
+  <div class="mb-3">
+    <label for="descripcion" class="form-label">Descripción</label>
+    <textarea  class="form-control" id="descripcion" placeholder="Escribe los detalles del lugar que quieres publicar..."></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="precio" class="form-label">Precio</label>
+    <div class="input-group mb-3">
+      <span class="input-group-text">$</span>
+      <input type="number" class="form-control" id="precio" aria-describedby="precio" placeholder="Precio de tu propiedad...">
+      <span class="input-group-text">.00</span>
+    </div>
+  </div>
+  <!-- Numero de pisos -->
+  <div class="mb-3">
+    <label for="pisos" class="form-label">Número de pisos</label>
+    <input type="number" class="form-control" id="pisos" aria-describedby="pisos" placeholder="0">
+  </div>
+  <!-- Numero de banos -->
+  <div class="mb-3">
+    <label for="banos" class="form-label">Número de baños</label>
+    <input type="number" class="form-control" id="banos" aria-describedby="banos" placeholder="0">
+  </div>
+  <!-- Superficie de construccion -->
+  <div class="mb-3">
+    <label for="construccion" class="form-label">Superficie de construcción</label>
+    <div class="input-group mb-3">
+      <input type="number" class="form-control" id="construccion" aria-describedby="construccion" placeholder="0">
+      <span class="input-group-text">metros</span>
+    </div>
+  </div>
+  <!-- Superficie abierta -->
+  <div class="mb-3">
+    <label for="abierta" class="form-label">Superficie abierta</label>
+    <div class="input-group mb-3">
+      <input type="number" class="form-control" id="abierta" aria-describedby="abierta" placeholder="0">
+      <span class="input-group-text">metros</span>
+    </div>
+  </div>
+  <!-- Numero habitaciones -->
+  <div class="mb-3">
+    <label for="habitaciones" class="form-label">Número de habitaciones</label>
+    <input type="number" class="form-control" id="habitaciones" aria-describedby="habitaciones" placeholder="0">
+  </div>
+
+  <!-- Antiguedad anos -->
+  <div class="mb-3">
+    <label for="antiguedad" class="form-label">Años de antiguedad</label>
+    <input type="number" class="form-control" id="antiguedad" aria-describedby="antiguedad" placeholder="0">
+  </div>
+
+  <!-- Tipo de propiedad CASA DEPARTAMENTO edificio o terreno -->
+  <div class="mb-3">
+    <label class="form-label">Tipo de propiedad</label>
+    <select class="form-select" aria-label="Default select example">
+      <option selected>-- Seleccione --</option>
+      <option value="0">Casa</option>
+      <option value="1">Departamento</option>
+      <option value="2">Edificio</option>
+      <option value="3">Edificio</option>
+    </select>
+  </div>
+  <!-- Direccion -->
+  <div class="mb-3">
+    <label for="direccion" class="form-label">Dirección</label>
+    <input type="text" class="form-control" id="direccion" aria-describedby="direccion" placeholder="Escriba la dirección exacta del lugar...">
+  </div>
+  <!-- Ciudad -->
+  <div class="mb-3">
+    <label for="ciudad" class="form-label">Ciudad</label>
+    <input type="text" class="form-control" id="ciudad" aria-describedby="ciudad" placeholder="Escriba la ciudad del lugar...">
+  </div>
+  <!-- Subir una sola foto -->
+  <div class="mb-3">
+    <label for="foto" class="form-label">Foto</label>
+   <input id="foto" type="file" accept="image/*" class="form-control" >
+  </div>
+  <button type="submit" class="btn btn-orange w-100">Publicar</button>
+</form>

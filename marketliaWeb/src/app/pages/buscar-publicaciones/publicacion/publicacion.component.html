@@ -1,0 +1,52 @@
+
+  <div class="col-md-2">
+    <img [src]="[publicacion.foto]" alt="" class="img img-fluid">
+  </div>
+  <div class="col-md p-2 pb-0">
+    <div class="row d-flex">
+      <div class="col-md-2"><strong>{{publicacion.precio | currency}}</strong></div>
+      <div class="col-md-2"><p>{{publicacion.titulo}}</p></div>
+
+    </div>
+    <div class="row d-flex">
+      <div class="col-md-2 d-flex">
+        <span class="material-icons mx-2 ">straighten</span>
+        <p>{{publicacion.construccion}} m</p>
+      </div>
+      <div class="col-md-2 d-flex">
+        <span class="material-icons mx-2">yard</span>
+        <p>{{publicacion.abierta}} m</p>
+      </div>
+      <div class="col-md-2 d-flex">
+        <span class="material-icons mx-2">bathtub</span>
+        <p>{{publicacion.numeroBanos}} </p>
+      </div>
+      <div class="col-md-2 d-flex">
+        <span class="material-icons mx-2">bed</span>
+        <p>{{publicacion.numeroHab}}</p>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <strong>{{publicacion.direccion}}</strong>
+        <p>{{publicacion.descripcion}}</p>
+      </div>
+      <div class="col-md d-flex justify-content-end">
+        <button class="m-2 mb-0 btn rounded-circle border-dark">
+          <span class="material-icons">
+            favorite_border
+            </span>
+        </button>
+        <button class="m-2 mb-0 btn rounded-circle btn-success">
+          <span class="material-icons">
+            whatsapp
+            </span>
+        </button>
+        <button class="m-2 mb-0 btn btn-orange">
+          Contactar
+        </button>
+      </div>
+    </div>
+  </div>
+
