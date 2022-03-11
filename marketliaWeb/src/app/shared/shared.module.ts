@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatDialogModule} from '@angular/material/dialog'
 import {MatFormFieldModule} from '@angular/material/form-field'
+import { AppRoutingModule } from '../app-routing.module';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -16,11 +17,12 @@ import {MatFormFieldModule} from '@angular/material/form-field'
     CommonModule,
     RouterModule,
     MatDividerModule,
+    AppRoutingModule,
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
-
+    AppRoutingModule,
     MatDividerModule,
   ]
 })

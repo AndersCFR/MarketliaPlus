@@ -12,6 +12,8 @@ export interface Menu{
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  loginFlag: boolean=true
+  nombreUsuario: string = 'javier'
   navbar: Menu[] = [
     {
       label: 'MisPublicaciones',
@@ -45,5 +47,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  loggin(){
+    this.loginFlag = !this.loginFlag
+  }
 
 }

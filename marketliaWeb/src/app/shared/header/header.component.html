@@ -18,10 +18,26 @@
               </li>
               <li class="">
                 <button
+                  *ngIf="loginFlag; else logChecked"
                   class="btn btn-orange"
                   type="button"
                   data-bs-toggle="modal"
                   data-bs-target="#modalLogin">Ingresar</button>
+                <ng-template #logChecked>
+                  <div class="row d-flex  btn bg-orange">
+                    <div class="col">
+                      <h4 class="text-white m-0">javier</h4>
+                    </div>
+                    <div class="col">
+
+                      <span class="material-icons text-white">
+                        account_circle
+                        </span>
+                    </div>
+
+                  </div>
+
+                </ng-template>
               </li>
             </ul>
 
@@ -56,7 +72,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-orange">Iniciar Sesión</button>
+        <button type="button" class="btn btn-orange" data-bs-dismiss="modal" (click)="loggin()">Iniciar Sesión</button>
       </div>
     </div>
   </div>
